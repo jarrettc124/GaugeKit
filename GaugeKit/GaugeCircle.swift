@@ -34,11 +34,11 @@ extension Gauge: GaugeCircle {
         gaugeLayer.frame = layer.bounds
         gaugeLayer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         // Rotate it in 90° CCW to make start position from the top
-        gaugeLayer.transform = CATransform3DRotate(gaugeLayer.transform, CGFloat(rotateAngle * 2 - Double.pi/2), 0, 0, 1)
+        gaugeLayer.transform = CATransform3DRotate(gaugeLayer.transform, CGFloat(rotateAngle * 2 - pi_2), 0, 0, 1)
 
         if roundCap {
-            ringLayer.lineCap = CAShapeLayerLineCap.round
-            bgLayer.lineCap = CAShapeLayerLineCap.round
+            ringLayer.lineCap = .round
+            bgLayer.lineCap = .round
         }
 
         if reverse {

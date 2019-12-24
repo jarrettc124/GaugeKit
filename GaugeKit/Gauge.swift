@@ -9,6 +9,8 @@
 import UIKit
 import QuartzCore
 
+let pi_2 = Double.pi / 2
+
 public enum GaugeType: Int {
     case circle = 0
     case left
